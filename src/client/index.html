@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app='GoalPosts'>
+  <head>
+    <meta charset="utf-8" />
+    <base href="/">
+  </head>
+  <body>
+
+    <div ng-view></div>
+
+<!-- @Kyle, double check that the angular scripts are working as intended. They're not! -->
+    <!-- <script src="/scripts/angular/angular.js"></script>
+    <script src="/scripts/angular-route/angular-route.js"></script> -->
+
+    <!-- TODO: ADD DEPENDENCY SCRIPT TAGS -->
+
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+  <script src="/services/auth-service.js"></script>
+  <script src="/services/goals-service.js"></script>
+  <script src="/controllers/auth-controller.js"></script>
+  <script src="/controllers/detail-controller.js"></script>
+  <script src="/controllers/goal-form-controller.js"></script>
+  <script src="/controllers/goals-controller.js"></script>
+  <script src="/app.js"></script>
+
+</html>

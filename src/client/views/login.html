@@ -1,0 +1,16 @@
+<head>
+  <meta charset="utf-8" />
+  <base href="/">
+</head>
+<h1>Login</h1>
+
+<div ng-init='signout()'></div>
+
+<div id='login'>
+  <form name="loginForm" ng-submit='login()'>
+    <input type='text' ng-model='user.username'>
+    <input type="password" ng-model='user.password'>
+    <button>Login</button>
+  </form>
+  <a href="/signup">Don't have an account? <strong>Sign Up</strong> ...</a>
+</div>

@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8" />
+  <base href="/">
+</head>
+<h1>Submit Your Goal!</h1>
+
+<form name="goal-form" ng-submit="submit()">
+  Title:
+  <input type="text" ng-model="title" placeholder="Title">
+  Description:
+  <input type="text" ng-model="description" placeholder="Description">
+  Due Date:
+  <input type="date" ng-model="due_date">
+  <input type="submit" value="Submit">
+  <input type="reset">
+
+</form>
+<a href="/goals/{{userId}}"><button>View Your Goals</button></a>
+<a href="/signin"><button>Sign Out</button></a>
+<h3>{{textDisplay}}</h3>
+

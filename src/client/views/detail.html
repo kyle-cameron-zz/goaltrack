@@ -1,0 +1,17 @@
+<head>
+  <meta charset="utf-8" />
+  <base href="/">
+  <title>Goal Detail</title>
+</head>
+
+<div class="goal-detail">
+  <div>
+    <h2>Title: {{goal.title}}</h2>
+    <div>Description: {{goal.description}}</div>
+    <div>Due Date: {{goal.due_date | date:'MM/dd/yyyy'}}</div>
+    <div>Status: {{goal.status}}
+      <button ng-click = 'updateGoalToCompleted()'>Goal Completed!</button>
+    </div>
+  </div>
+  <a href="/goals/{{goal.user_id}}"><button>Back to My Goals</button></a>
+</div>
